@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 
 function UseState() {
@@ -11,6 +11,21 @@ function UseState() {
     green: "bg-green-500",
     yellow: "bg-yellow-500",
   };
+
+  useEffect (()=>{
+    console.log("The Component is mounted");
+
+    return function(){
+      console.log("Component is unounted");
+      
+    }
+    
+  },[])
+
+  useEffect (()=>{
+    console.log("The component is update");
+    
+  },[colour])
 
   return (
     <main className={`${colorClasses[colour]}`}>
