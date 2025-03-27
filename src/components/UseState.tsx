@@ -28,8 +28,8 @@ function UseState() {
   },[colour])
 
   return (
-    <main className={`${colorClasses[colour]}`}>
-      <div className={`${colorClasses[colour]} p-15  rounded-4xl`}>
+    <main className={`${colorClasses[colour]} p-10`}>
+      <div className={`${colorClasses[colour]} p-15  rounded-4xl text-3xl font-bold`}>
         {" "}
         My colour is now {colour}
       </div>
