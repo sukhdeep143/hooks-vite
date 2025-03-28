@@ -13,7 +13,9 @@ function App() {
 
   return (
     <div className="">
-      <button className="m-5" onClick={() =>setMode(!Mode)}>Toggle</button>
+      <button className="m-5 hover:font-bold" onClick={() =>setMode(!Mode)}>
+        Toggle
+      </button>
       {Mode ? <UseState /> : ""}
 
       <UserContext.Provider value={User}>
